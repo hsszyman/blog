@@ -1,0 +1,25 @@
+
+<body>
+  <div class="container">
+    <div class="row h-100" *ngFor="let key of Object.keys(selectedBlogs)">
+      <div class="col">
+      </div>
+      <div class="col-sm?-12 col-md-8">
+        <div class="card mb-3">
+          <div class="card-body">
+            <app-blog-post [(blogPost)]="selectedBlogs[key]">
+            </app-blog-post>
+          </div>
+            <div class="card-footer text-muted">
+              <button class="badge badge-info" *ngFor="let name of selectedBlogs[key].Tags" (click)="filterFunc(name);">
+                {{name}}
+              </button>
+            </div>  
+        </div>
+      </div>
+      <div class="col">
+      </div>
+    </div>
+    
+  </div>
+</body>

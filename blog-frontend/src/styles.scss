@@ -1,0 +1,50 @@
+@import "~@angular/material/prebuilt-themes/indigo-pink.css";
+//@import '~prismjs/themes/prism-coy.css';
+//@import '~prismjs/themes/prism-dark.css';
+//@import '~prismjs/themes/prism-funky.css';
+//@import '~prismjs/themes/prism-okaidia.css';
+//@import '~prismjs/themes/prism-solarizedlight.css';
+
+$background: #32302F;
+$hardground: #1d2021;
+$foreground: #8f8670;
+$color0:      #282828;
+$color8:   #928374;
+$color1: #cc241d;
+$color9: #fb4934;
+$color2: #98971a;
+$color10: #b8bb26;
+$color3: #d79921;
+
+.code-toolbar {
+    border-radius: 0%;
+}
+pre {
+    border-radius: 0%;
+}
+/*
+markdown {
+    color: $foreground;
+    font-size: 90%;
+    h2 {
+        font-size: 170%;
+        font-family: 'Times New Roman', Times, serif;
+    }
+    hr {
+        color: $foreground;
+        background-color: #8f8670;
+    }
+}
+pre {
+    background-color: #8f8670;
+}
+.card {
+    background-color: white;
+    color: $foreground;
+}
+
+html, body {
+    height: 100%;
+    background: $background;
+}
+*/
