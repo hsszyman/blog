@@ -1,6 +1,7 @@
 
-<div class="preview">
-    <markdown ngPreserveWhitespaces [(data)]="blogPost.Content">
+<div #preview class="preview">
+    <markdown ngPreserveWhitespaces [(data)]="blogContent">
     </markdown>
-    <div class="fadeout"></div>
+    <div *ngIf="showPreview()" class="fadeout" (click)="togglePreview()">
+    </div>
 </div>

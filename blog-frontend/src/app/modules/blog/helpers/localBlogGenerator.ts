@@ -4,6 +4,12 @@ export class LocalBlogHelper {
     constructor() {
         this.blogs.push(
             new BlogModel(
+                ['t'], 4,
+                'now test'
+            )
+        );
+        this.blogs.push(
+            new BlogModel(
             ['python', 'scripting', 'sh'], 3, `
             # Bundling python with shellscript
 

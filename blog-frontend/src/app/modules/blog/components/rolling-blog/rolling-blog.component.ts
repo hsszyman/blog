@@ -1,4 +1,4 @@
-import { Component, OnInit, Input} from '@angular/core';
+import { Component, OnInit, Input, EventEmitter, Output, HostListener} from '@angular/core';
 import { BlogService } from '../../services/blog.service';
 import { Router, NavigationEnd } from '@angular/router';
 
@@ -13,8 +13,9 @@ export class RollingBlogComponent implements OnInit {
   blogs;
   selectedBlogs;
   Object = Object;
+  test = 1;
   constructor(blogService: BlogService, private router: Router) {
-    this.blogs = blogService.getBlogPreviews();
+    this.blogs = blogService.getBlogs();
     this.selectedBlogs = Object.assign([], {}, this.blogs);
     router.events.subscribe((val) => {
       if (val instanceof NavigationEnd && val.url === '/') {
@@ -24,13 +25,21 @@ export class RollingBlogComponent implements OnInit {
   }
 
   ngOnInit() {
+    console.log(this.selectedBlogs);
   }
 
   filterFunc(filter) {
     console.log(filter);
     let tmpBlog = Object.assign([], {}, this.blogs);
     tmpBlog = tmpBlog.filter((elem) => elem.Tags.includes(filter));
-    this.selectedBlogs = tmpBlog;
+    this.selectedBlogs = Object.assign([], {}, tmpBlog);
+    console.log(this.selectedBlogs);
   }
+
+  getHeight(height: number) {
+    this.test = height;
+  }
+
+
 
 }
