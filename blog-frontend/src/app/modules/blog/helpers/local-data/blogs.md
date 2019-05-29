@@ -1,4 +1,8 @@
-# Learning python
+\`python
+                class Person:
+                def __init__(self, name):
+                    self.name = name
+            \`\`\# Learning python
 
 Python is a an interesting language with many neat features like whitespace aware stuff and it's really good and stuff
 

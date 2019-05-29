@@ -8,6 +8,9 @@ import { MarkdownModule } from 'ngx-markdown';
 import { MarkdownService } from 'ngx-markdown';
 import { MarkedOptions } from 'ngx-markdown';
 import { BlogModule } from './modules/blog/blog.module';
+import { LayoutModule } from './modules/layout/layout.module';
+import { RouterModule } from '@angular/router';
+
 @NgModule({
   declarations: [
     AppComponent,
@@ -18,8 +21,9 @@ import { BlogModule } from './modules/blog/blog.module';
     AppRoutingModule,
     MaterialModule,
     MarkdownModule,
-    BlogModule
-
+    BlogModule,
+    LayoutModule,
+    RouterModule
   ],
   providers: [
     MarkdownService,

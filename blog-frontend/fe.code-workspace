@@ -1,0 +1,13 @@
+{
+	"folders": [
+		{
+			"path": "."
+		}
+	],
+	"settings": {
+		"editor.stablePeek": true,
+		"vim.easymotionMarkerFontSize": "12",
+		"terminal.integrated.fontSize": 12,
+		"debug.console.fontSize": 10
+	}
+}

@@ -28,6 +28,7 @@
     "jquery": "^3.4.1",
     "lodash-es": "^4.17.11",
     "ng2-prism": "^2.3.2",
+    "ngx-bootstrap": "^4.2.0",
     "ngx-markdown": "^7.1.5",
     "popper": "^1.0.1",
     "prismjs": "^1.16.0",

@@ -7,21 +7,24 @@ import { MarkdownModule } from 'ngx-markdown';
 import { MarkdownService } from 'ngx-markdown';
 import { MarkedOptions } from 'ngx-markdown';
 import { MatCardModule } from '@angular/material';
+import { RouterModule} from '@angular/router';
 
 @NgModule({
   declarations: [
     BlogPostComponent,
-    RollingBlogComponent,
+    RollingBlogComponent
   ],
   imports: [
     CommonModule,
     MarkdownModule,
-    MatCardModule
+    MatCardModule,
+    RouterModule
   ],
   providers: [
     BlogService,
     MarkdownService,
-    MarkedOptions
+    MarkedOptions,
+    RouterModule
   ],
   exports: [
     RollingBlogComponent

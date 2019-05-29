@@ -22,29 +22,85 @@ $color3: #d79921;
 pre {
     border-radius: 0%;
 }
-/*
-markdown {
-    color: $foreground;
-    font-size: 90%;
-    h2 {
-        font-size: 170%;
-        font-family: 'Times New Roman', Times, serif;
-    }
-    hr {
-        color: $foreground;
-        background-color: #8f8670;
-    }
-}
-pre {
-    background-color: #8f8670;
-}
-.card {
-    background-color: white;
-    color: $foreground;
+
+.badge {
+    background-color: #428bca;
+    color: white;
+    font-family: 'Courier New', Courier, monospace !important;
 }
 
-html, body {
-    height: 100%;
-    background: $background;
+.nav-link {
+    color: white !important;
 }
-*/
+
+.navbar-brand {
+    color: white !important;
+    font-family: 'Courier New', Courier, monospace !important;
+}
+
+/* Nav links */
+.nav-link {
+    position: relative;
+    padding: 1rem !important;
+    font-weight: 500;
+    color: #cdddeb;
+    font-family: 'Courier New', Courier, monospace !important;
+  }
+
+  .nav-link:hover,
+.nav-link:focus {
+  color: #fff;
+  background-color: transparent;
+}
+
+nav {
+    padding: 0 !important;
+}
+
+.nav-link.active:after {
+    position: absolute;
+    bottom: 0;
+    left: 50%;
+    width: 0;
+    height: 0;
+    margin-left: -.3rem;
+    vertical-align: middle;
+    content: "";
+    border-right: .3rem solid transparent;
+    border-bottom: .3rem solid;
+    border-left: .3rem solid transparent;
+  }
+
+  .blog-masthead {
+    margin-bottom: 3rem;
+    background-color: #428bca;
+    -webkit-box-shadow: inset 0 -.1rem .25rem rgba(0,0,0,.1);
+            box-shadow: inset 0 -.1rem .25rem rgba(0,0,0,.1);
+  }
+
+
+#blogmastcontainer{
+  max-width: 60 !important;
+  margin-left: 2% !important;
+}
+
+.preview {
+    position: relative;
+}
+.fadeout {
+    display: block;
+    position: absolute;
+    background-image: linear-gradient(to bottom, transparent 0%, white 80%);
+    top: 50%;
+    height: 50%;
+    width: 100%;
+    content: ''; 
+}
+
+.card {
+    max-height: 50em;
+}
+
+.toolbar-item {
+    visibility: hidden;
+}

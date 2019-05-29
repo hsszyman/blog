@@ -7,6 +7,5 @@ export class BlogModel {
         this.Tags = tags;
         this.CoolFactor = coolfactor;
         this.Content = content;
-        
     }
 }

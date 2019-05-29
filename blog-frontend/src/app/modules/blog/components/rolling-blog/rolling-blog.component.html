@@ -1,23 +1,27 @@
 
 <body>
-  <div class="container">
+  <div class="container" data-spy="scroll" data-target=".navbar">
     <div class="row h-100" *ngFor="let key of Object.keys(selectedBlogs)">
-      <div class="col">
+      <div class="col-sm-0 col-md-0 col-lg-2">
       </div>
-      <div class="col-sm?-12 col-md-8">
+      <div class="col-sm?-12 col-md-12 col-lg-8 d-sm-block" style="padding: 0%">
         <div class="card mb-3">
-          <div class="card-body">
-            <app-blog-post [(blogPost)]="selectedBlogs[key]">
-            </app-blog-post>
-          </div>
-            <div class="card-footer text-muted">
-              <button class="badge badge-info" *ngFor="let name of selectedBlogs[key].Tags" (click)="filterFunc(name);">
+          <div class="card-header">
+            December, 2 2019
+            <div class="float-right">
+              <button class="badge " *ngFor="let name of selectedBlogs[key].Tags" (click)="filterFunc(name);">
                 {{name}}
               </button>
-            </div>  
+            </div>
+            
+          </div>
+          <div class="card-body ">
+            <app-blog-post [(blogPost)]="selectedBlogs[key]" isPreview="true">
+            </app-blog-post>
+          </div>
         </div>
       </div>
-      <div class="col">
+      <div class="col-sm-0 col-md-0 col-lg-2">
       </div>
     </div>
     

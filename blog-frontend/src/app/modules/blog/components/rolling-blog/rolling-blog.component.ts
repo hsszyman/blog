@@ -1,5 +1,6 @@
 import { Component, OnInit, Input} from '@angular/core';
 import { BlogService } from '../../services/blog.service';
+import { Router, NavigationEnd } from '@angular/router';
 
 @Component({
   selector: 'app-rolling-blog',
@@ -12,9 +13,14 @@ export class RollingBlogComponent implements OnInit {
   blogs;
   selectedBlogs;
   Object = Object;
-  constructor(blogService: BlogService) {
-    this.blogs = blogService.getBlogs();
+  constructor(blogService: BlogService, private router: Router) {
+    this.blogs = blogService.getBlogPreviews();
     this.selectedBlogs = Object.assign([], {}, this.blogs);
+    router.events.subscribe((val) => {
+      if (val instanceof NavigationEnd && val.url === '/') {
+        this.selectedBlogs = Object.assign([], {}, this.blogs);
+      }
+    });
   }
 
   ngOnInit() {

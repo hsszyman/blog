@@ -8,10 +8,22 @@ import { LocalBlogHelper } from '../helpers/localBlogGenerator';
 export class BlogService {
   blogs: BlogModel[] = new Array<BlogModel>();
   localBlogs: BlogModel[] = new Array<BlogModel>();
+  previewBlogs = new Array<BlogModel>();
   constructor() {
     this.blogs = new LocalBlogHelper().getBlogs();
+    const tmpBlogs = new LocalBlogHelper().getBlogs();
+    tmpBlogs.forEach((blog) => {
+      this.previewBlogs.push(
+        new BlogModel(blog.Tags, blog.CoolFactor, blog.Content.substring(0, 800))
+      );
+
+    });
   }
   getBlogs() {
     return this.blogs;
   }
+  getBlogPreviews() {
+    return this.previewBlogs;
+  }
+
 }
