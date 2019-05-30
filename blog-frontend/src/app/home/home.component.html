@@ -1,4 +1,47 @@
-<app-navbar></app-navbar>
-<app-rolling-blog [filter]="lang">
-
+<body>
+<app-mainlayout>
+  <div class="body-content">
+    <app-rolling-blog></app-rolling-blog>
+  </div>
+</app-mainlayout>
+</body>
+<!--<app-navbar>
+  <app-header>
+    Interactive blog
+    <span class="description">
+      By Hayden Szymanski
+    </span>
+  </app-header>
+</app-navbar>
+<app-rolling-blog [filter]="lang">-->
+<!--
 </app-rolling-blog>
+<body>
+  <div class="container" >
+    <div class="row h-100" *ngFor="let blog of selectedBlogs">
+      <div class="col-sm-0 col-md-0 col-lg-2">
+      </div>
+      <div class="col-sm?-12 col-md-12 col-lg-8 d-sm-block" style="padding: 0%">
+        <div class="card mb-3">
+          <div class="card-header">
+            December, 2 2019
+            <div class="float-right">
+              <button class="badge" *ngFor="let name of blog.Tags" (click)="filterFunc(name);">
+                {{name}}
+              </button>
+            </div>
+            
+          </div>
+          <div class="card-body ">
+            <app-blog-post [(blogPost)]="blog" isPreview="true" >
+            </app-blog-post>
+          </div>
+        </div>
+      </div>
+      <div class="col-sm-0 col-md-0 col-lg-2">
+      </div>
+    </div>
+    
+  </div>
+</body>
+-->

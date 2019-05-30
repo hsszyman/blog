@@ -1,0 +1,19 @@
+<app-navbar></app-navbar>
+<app-header>
+  Interactive Coding Blog
+  <span class="description">
+    By Hayden Szymanski
+  </span>
+</app-header>
+<div class="container-fluid" style="padding: 0%">
+  <div class="row h-100 no-gutters">
+    <div class="col-sm-0 col-md-1 col-xs-0 col-lg-3 d-sm-block" style="padding:0%">
+    </div>
+    <div class="col-sm-12 col-md-10 col-xs-10 col-lg-6 d-sm-block" style="padding: 0%">
+      <ng-content select=".body-content"></ng-content>
+    </div>
+    <div class="col-sm-0 col-md-1 col-xs-0 col-lg-3 d-sm-block" style="padding:0%">
+    </div>
+  </div>
+
+</div>

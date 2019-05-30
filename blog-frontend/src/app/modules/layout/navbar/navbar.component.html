@@ -1,22 +1,24 @@
 <div class="blog-masthead">
-<div class="container blog" id="blogmastcontainer" data-spy="affix">
-  <nav class="navbar navbar-expand navbar-light " data-spy="afix">
-    <a class="navbar-brand" href="#">HS</a>
-      <ul class="navbar-nav">
-        <li class="nav-item">
-          <a routerLink="" routerLinkActive="active" class="nav-link active" style="color: white">Rolling Blog <span class="sr-only">(current)</span></a>
-        </li>
-        <li class="nav-item">
-          <a class="nav-link" href="#">About</a>
-        </li>
-        <li class="nav-item">
-          <a class="nav-link" href="#">Contact</a>
-        </li>
-        <li class="nav-item">
-        </li>
-      </ul>
-    </nav>
+  <div class="container blog" data-spy="affix" id="blogmastcontainer"style="padding:0%; margin-left: 0%">
+    <div [appScrollFollow]="ok"></div>
+    <nav class="navbar navbar-expand navbar-light" data-spy="affix" >
+      <a class="navbar-brand" href="#">HS</a>
+        <ul class="navbar-nav">
+          <li class="nav-item">
+            <a routerLink="" routerLinkActive="active" class="nav-link active" style="color: white">Blog <span class="sr-only">(current)</span></a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="#">About</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="#">Contact</a>
+          </li>
+          <li class="nav-item">
+          </li>
+        </ul>
+      </nav>
+  </div>
 </div>
 
-
-</div>
+<ng-content select="app-header">
+</ng-content>

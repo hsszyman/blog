@@ -10,6 +10,7 @@ import { MarkedOptions } from 'ngx-markdown';
 import { BlogModule } from './modules/blog/blog.module';
 import { LayoutModule } from './modules/layout/layout.module';
 import { RouterModule } from '@angular/router';
+import { RollingBlogComponent } from './modules/blog/components/rolling-blog/rolling-blog.component';
 
 @NgModule({
   declarations: [

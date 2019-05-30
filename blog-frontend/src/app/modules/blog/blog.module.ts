@@ -8,6 +8,8 @@ import { MarkdownService } from 'ngx-markdown';
 import { MarkedOptions } from 'ngx-markdown';
 import { MatCardModule } from '@angular/material';
 import { RouterModule} from '@angular/router';
+import { LayoutModule } from '@angular/cdk/layout';
+import { SideBarComponent } from '../layout/side-bar/side-bar.component';
 
 @NgModule({
   declarations: [
@@ -18,7 +20,8 @@ import { RouterModule} from '@angular/router';
     CommonModule,
     MarkdownModule,
     MatCardModule,
-    RouterModule
+    RouterModule,
+    LayoutModule
   ],
   providers: [
     BlogService,
