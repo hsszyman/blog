@@ -14,6 +14,7 @@ export class RollingBlogComponent implements OnInit {
   selectedBlogs;
   Object = Object;
   test = 1;
+
   constructor(blogService: BlogService, private router: Router) {
     this.blogs = blogService.getBlogs();
     this.selectedBlogs = Object.assign([], {}, this.blogs);
@@ -39,7 +40,5 @@ export class RollingBlogComponent implements OnInit {
   getHeight(height: number) {
     this.test = height;
   }
-
-
 
 }

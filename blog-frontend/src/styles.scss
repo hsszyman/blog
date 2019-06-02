@@ -27,6 +27,7 @@ pre {
     background-color: #428bca;
     color: white;
     font-family: 'Courier New', Courier, monospace !important;
+    border-radius: 0% !important;
 }
 
 .nav-link {
@@ -98,9 +99,6 @@ nav {
     content: ''; 
 }
 
-.card {
-}
-
 .toolbar-item {
     visibility: hidden;
 }
@@ -112,3 +110,6 @@ nav {
   bottom: 0;
 }
 
+.card {
+  border-radius: 0% !important;
+}

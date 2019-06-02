@@ -1,5 +1,7 @@
 {
     "markdown.preview.fontSize": 12,
+    "editor.fontFamily": "'Fira Code'", 
+    "editor.fontLigatures": true, 
     "editor.fontSize": 12,
     "editor.stablePeek": true,
     "editor.mouseWheelZoom": true

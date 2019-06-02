@@ -2,13 +2,24 @@
   <div class="col">
     <div class="card mb-3" >
       <div class="card-header">
-        December, 2 2019
-        <div class="float-right">
-          <button class="badge" *ngFor="let name of blog.Tags" (click)="filterFunc(name);">
-            {{name}}
-          </button>
+        <div class="row">
+          <div class="col-10">
+            <h3>{{ blog.Title }}</h3>
+          </div>
+
         </div>
-        
+        <div class="row">
+          <div class="col">
+            December, 2 2019
+          </div>
+          <div class="col">
+            <div class="float-right">
+              <button class="badge" *ngFor="let name of blog.Tags" (click)="filterFunc(name);">
+                {{name}}
+              </button>
+            </div>
+          </div>
+        </div>
       </div>
       <div class="card-body ">
         <app-blog-post [(blogPost)]="blog" isPreview="true" >

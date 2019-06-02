@@ -30,6 +30,7 @@
     "ng2-prism": "^2.3.2",
     "ngx-bootstrap": "^4.2.0",
     "ngx-markdown": "^7.1.5",
+    "package.json": "^2.0.1",
     "popper": "^1.0.1",
     "prismjs": "^1.16.0",
     "rxjs": "~6.3.3",
